@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Проверка теста</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Тест" id="26">
+			<DataPath>Тест</DataPath>
+			<ChoiceParameters>
+				<app:item name="Отбор.Завершен">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">true</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="ТестКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="28"/>
+			<Events>
+				<Event name="OnChange">ТестПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="ДеревоРазделов" id="1">
+			<Representation>Tree</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<InitialTreeView>ExpandAllLevels</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ДеревоРазделов</DataPath>
+			<RowPictureDataPath>ДеревоРазделов.КодКартинки</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>CommonPicture.КоллекцияПиктограммЭлементов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>HierarchicalList</ExcludedCommand>
+				<ExcludedCommand>List</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+				<ExcludedCommand>Tree</ExcludedCommand>
+			</CommandSet>
+			<ContextMenu name="ДеревоРазделовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДеревоРазделовКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ФормаОбновить" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Обновить</CommandName>
+						<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоРазделовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДеревоРазделовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДеревоРазделов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоРазделовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДеревоРазделовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоРазделовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДеревоРазделов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоРазделовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДеревоРазделовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоРазделовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДеревоРазделов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоРазделовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДеревоРазделовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ДеревоРазделовПриАктивизацииСтроки</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДеревоРазделовФормулировка" id="14">
+					<DataPath>ДеревоРазделов.Формулировка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ДеревоРазделовФормулировкаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДеревоРазделовФормулировкаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<CheckBoxField name="ДеревоРазделовОтветДан" id="17">
+					<DataPath>ДеревоРазделов.ОтветДан</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранен</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.Change</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоРазделовОтветДанКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДеревоРазделовОтветДанРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<InputField name="ДеревоРазделовПравильность" id="20">
+					<DataPath>ДеревоРазделов.Правильность</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правильность</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1; ЧН=0,0</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=1; ЧН=0,0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДеревоРазделовПравильностьКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДеревоРазделовПравильностьРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<CheckBoxField name="ДеревоРазделовПроверен" id="23">
+					<DataPath>ДеревоРазделов.Проверен</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<HeaderPicture>
+						<xr:Ref>StdPicture.SearchControl</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоРазделовПроверенКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДеревоРазделовПроверенРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<LabelField name="Ответ" id="29">
+			<DataPath>Ответ</DataPath>
+			<Height>3</Height>
+			<ContextMenu name="ОтветКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ОтветРасширеннаяПодсказка" id="31"/>
+		</LabelField>
+		<UsualGroup name="ГруппаОценка" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оценка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оценка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОценкаРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Правильность" id="32">
+					<DataPath>Правильность</DataPath>
+					<ContextMenu name="ПравильностьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПравильностьРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<Button name="Оценить" id="37">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.Оценить</CommandName>
+					<ExtendedTooltip name="ОценитьРасширеннаяПодсказка" id="38"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Тест" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ТестБинарноеДерево</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоРазделов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево разделов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Разделы</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.ВопросыДляТестирования</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Формулировка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формулировка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодКартинки" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОтветДан" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ дан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Правильность" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правильность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Проверен" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторСтроки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>40</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Ответ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Правильность" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правильность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Оценить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Оценить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

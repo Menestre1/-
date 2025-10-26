@@ -1,0 +1,970 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>88</Width>
+	<Customizable>false</Customizable>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="1574">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="1632"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="1575">
+					<Width>78</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль за состоянием программы, резервное копирование и восстановление, оптимизация быстродействия.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="1576"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="1633"/>
+				</LabelDecoration>
+				<LabelDecoration name="Декорация" id="1584">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<ContextMenu name="ДекорацияКонтекстноеМеню" id="1585"/>
+					<ExtendedTooltip name="ДекорацияРасширеннаяПодсказка" id="1634"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="1577">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="1635"/>
+					<ChildItems>
+						<Button name="Справка" id="1578">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="1636"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЧастотныйСервис" id="1431">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа частотный сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа частотный сервис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЧастотныйСервисExtendedTooltip" id="1637"/>
+			<ChildItems>
+				<Button name="ОбработкаЖурналРегистрацииОткрыть" id="1445">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.ЖурналРегистрации.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаЖурналРегистрацииОткрытьExtendedTooltip" id="1638"/>
+				</Button>
+				<Button name="ОбработкаАктивныеПользователиОткрыть" id="1446">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.АктивныеПользователи.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаАктивныеПользователиОткрытьExtendedTooltip" id="1639"/>
+				</Button>
+				<Button name="ОбработкаБлокировкаСоединенийСИнформационнойБазойОткрыть" id="1447">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.БлокировкаРаботыПользователей.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаБлокировкаСоединенийСИнформационнойБазойОткрытьExtendedTooltip" id="1640"/>
+				</Button>
+				<Button name="ОбработкаУдалениеПомеченныхОбъектовОткрыть" id="1448">
+					<Type>Hyperlink</Type>
+					<CommandName>DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open</CommandName>
+					<ExtendedTooltip name="ОбработкаУдалениеПомеченныхОбъектовОткрытьExtendedTooltip" id="1641"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОтчетыИОбработки" id="1712">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчеты и обработки</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаОтчетыИОбработкиРасширеннаяПодсказка" id="1713"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОтчетыАдминистратора" id="1716">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтчетыАдминистратораРасширеннаяПодсказка" id="1717"/>
+					<ChildItems>
+						<Button name="ОбщаяКомандаПанельОтчетовАдминистрирование" id="1795">
+							<Type>Hyperlink</Type>
+							<CommandName>CommonCommand.ПанельОтчетовАдминистрирование</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОбщаяКомандаПанельОтчетовАдминистрированиеРасширеннаяПодсказка" id="1796">
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа7" id="1730">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="1731"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДополнительныеОтчетыПоАдминистрированию" id="1732">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1733"/>
+							<ChildItems>
+								<Button name="ДополнительныеОтчетыПоАдминистрированию" id="1818">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonCommand.ДополнительныеОтчетыАдминистрирование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные отчеты по администрированию</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1819"/>
+								</Button>
+								<LabelDecoration name="ПояснениеДополнительныеОтчетыПоАдминистрированию" id="1736">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Команды дополнительных отчетов, подключенных к программе.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеДополнительныеОтчетыПоАдминистрированиюКонтекстноеМеню" id="1737"/>
+									<ExtendedTooltip name="ПояснениеДополнительныеОтчетыПоАдминистрированиюРасширеннаяПодсказка" id="1738"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеОбработкиПоАдминистрированию" id="1739">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1740"/>
+							<ChildItems>
+								<Button name="ДополнительныеОбработкиПоАдминистрированию" id="1820">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonCommand.ДополнительныеОбработкиАдминистрирование</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные обработки по администрированию</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1821"/>
+								</Button>
+								<LabelDecoration name="ПояснениеДополнительныеОбработкиПоАдминистрированию" id="1743">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Команды дополнительных обработок, подключенных к программе.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеДополнительныеОбработкиПоАдминистрированиюКонтекстноеМеню" id="1744"/>
+									<ExtendedTooltip name="ПояснениеДополнительныеОбработкиПоАдминистрированиюРасширеннаяПодсказка" id="1745"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегламентныеОперации" id="1527">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные операции</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные операции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаРегламентныеОперацииExtendedTooltip" id="1642"/>
+			<ChildItems>
+				<UsualGroup name="Группа5" id="1586">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5ExtendedTooltip" id="1643"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОбработкаРегламентныеИФоновыеЗадания" id="1509">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1644"/>
+							<ChildItems>
+								<Button name="ОбработкаРегламентныеИФоновыеЗадания" id="1502">
+									<Type>Hyperlink</Type>
+									<CommandName>DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания</CommandName>
+									<ExtendedTooltip name="ОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1645"/>
+								</Button>
+								<LabelDecoration name="ПояснениеОбработкаРегламентныеИФоновыеЗадания" id="1510">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Планирование и запуск регламентных заданий.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеОбработкаРегламентныеИФоновыеЗаданияКонтекстноеМеню" id="1511"/>
+									<ExtendedTooltip name="ПояснениеОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1646"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1512">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1654"/>
+							<ChildItems>
+								<Button name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1503">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.УправлениеПолнотекстовымПоискомИИзвлечениемТекстов</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Управление полнотекстовым поиском</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1655"/>
+								</Button>
+								<LabelDecoration name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="1513">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновление и очистка индекса полнотекстового поиска.
+Управление извлечением текстов из файлов.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстовКонтекстноеМеню" id="1514"/>
+									<ExtendedTooltip name="ПояснениеУправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="1656"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаУдалениеПомеченныхОбъектовПоРасписанию" id="1766">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУдалениеПомеченныхОбъектовПоРасписаниюРасширеннаяПодсказка" id="1767"/>
+					<ChildItems>
+						<UsualGroup name="Группа8" id="1768">
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="1769"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУдалениеПомеченныхИспользование" id="2021">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУдалениеПомеченныхИспользованиеРасширеннаяПодсказка" id="2022"/>
+									<ChildItems>
+										<CheckBoxField name="УдалениеПомеченныхИспользование" id="1770">
+											<DataPath>УдалениеПомеченныхИспользование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Автоматически удалять помеченные объекты по расписанию</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="УдалениеПомеченныхИспользованиеКонтекстноеМеню" id="1771"/>
+											<ExtendedTooltip name="УдалениеПомеченныхИспользованиеРасширеннаяПодсказка" id="1772"/>
+											<Events>
+												<Event name="OnChange">УдалениеПомеченныхИспользованиеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<Button name="УдалениеПомеченныхНастроитьРасписание" id="1773">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.УдалениеПомеченныхНастроитьРасписание</CommandName>
+									<ExtendedTooltip name="УдалениеПомеченныхНастроитьРасписаниеРасширеннаяПодсказка" id="1774"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ПояснениеУдалениеПомеченныхОбъектовПоРасписанию" id="1775">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<ContextMenu name="ПояснениеУдалениеПомеченныхОбъектовПоРасписаниюКонтекстноеМеню" id="1776"/>
+							<ExtendedTooltip name="ПояснениеУдалениеПомеченныхОбъектовПоРасписаниюРасширеннаяПодсказка" id="1777"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРезервноеКопированиеИВосстановление" id="1467">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование и восстановление</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Резервное копирование и восстановление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаРезервноеКопированиеИВосстановлениеExtendedTooltip" id="1657"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="1620">
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1ExtendedTooltip" id="1658"/>
+					<ChildItems>
+						<UsualGroup name="Группа3" id="1471">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="1659"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРезервноеКопированиеПрограммы" id="1473">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа резервное копирование программы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРезервноеКопированиеПрограммыExtendedTooltip" id="1660"/>
+									<ChildItems>
+										<LabelDecoration name="РезервноеКопированиеПрограммы" id="1570">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Создание резервной копии</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="РезервноеКопированиеПрограммыКонтекстноеМеню" id="1571"/>
+											<ExtendedTooltip name="РезервноеКопированиеПрограммыExtendedTooltip" id="1661"/>
+											<Events>
+												<Event name="Click">РезервноеКопированиеПрограммыНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеРезервноеКопированиеПрограммы" id="1474">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запуск процедуры создания резервной копии.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеРезервноеКопированиеПрограммыКонтекстноеМеню" id="1475"/>
+											<ExtendedTooltip name="ПояснениеРезервноеКопированиеПрограммыExtendedTooltip" id="1662"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВосстановлениеРезервнойКопии" id="1476">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа восстановление резервной копии</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВосстановлениеРезервнойКопииExtendedTooltip" id="1663"/>
+									<ChildItems>
+										<LabelDecoration name="ВосстановлениеИзРезервнойКопии" id="1568">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Восстановление из резервной копии</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="ВосстановлениеИзРезервнойКопииКонтекстноеМеню" id="1569"/>
+											<ExtendedTooltip name="ВосстановлениеИзРезервнойКопииExtendedTooltip" id="1664"/>
+											<Events>
+												<Event name="Click">ВосстановлениеИзРезервнойКопииНажатие</Event>
+											</Events>
+										</LabelDecoration>
+										<LabelDecoration name="ПояснениеВосстановлениеРезервнойКопии" id="1477">
+											<TextColor>style:ПоясняющийТекст</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запуск восстановления данных из файлов резервной копии.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПояснениеВосстановлениеРезервнойКопииКонтекстноеМеню" id="1478"/>
+											<ExtendedTooltip name="ПояснениеВосстановлениеРезервнойКопииExtendedTooltip" id="1665"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНастройкаРезервногоКопирования" id="1479">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка резервного копирования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкаРезервногоКопированияExtendedTooltip" id="1666"/>
+							<ChildItems>
+								<LabelDecoration name="НастройкаРезервногоКопирования" id="1572">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка резервного копирования</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НастройкаРезервногоКопированияКонтекстноеМеню" id="1573"/>
+									<ExtendedTooltip name="НастройкаРезервногоКопированияExtendedTooltip" id="1667"/>
+									<Events>
+										<Event name="Click">НастройкаРезервногоКопированияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ПояснениеНастройкаРезервногоКопирования" id="1480">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Настройка параметров резервного копирования.</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalAlign>Top</VerticalAlign>
+									<ContextMenu name="ПояснениеНастройкаРезервногоКопированияКонтекстноеМеню" id="1481"/>
+									<ExtendedTooltip name="ПояснениеНастройкаРезервногоКопированияExtendedTooltip" id="1668"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВосстановлениеРезервнойКопииВМоделиСервиса" id="1615">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление резервной копии</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа восстановление резервной копии</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>86</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВосстановлениеРезервнойКопииВМоделиСервисаExtendedTooltip" id="1669"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация18" id="1618">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Picture>
+								<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="Декорация18КонтекстноеМеню" id="1619"/>
+							<ExtendedTooltip name="Декорация18ExtendedTooltip" id="1670"/>
+						</PictureDecoration>
+						<LabelDecoration name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервиса" id="1616">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для восстановления приложения из ранее созданной резервной копии необходимо перейти в личный кабинет и выполнить комады "Настройка -&gt; Архивные копии приложений"</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервисаКонтекстноеМеню" id="1617"/>
+							<ExtendedTooltip name="ПояснениеВосстановлениеРезервнойКопииВМоделиСервисаExtendedTooltip" id="1671"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКорректировкаДанных" id="1755">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка данных</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>86</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ChildItemsWidth>Equal</ChildItemsWidth>
+			<ExtendedTooltip name="ГруппаКорректировкаДанныхРасширеннаяПодсказка" id="1756"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОбработкаГрупповоеИзменениеОбъектов" id="1757">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка групповое изменение объектов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа обработка групповое изменение объектов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОбработкаГрупповоеИзменениеОбъектовРасширеннаяПодсказка" id="1758"/>
+					<ChildItems>
+						<Button name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитов" id="1778">
+							<Type>Hyperlink</Type>
+							<CommandName>DataProcessor.ГрупповоеИзменениеРеквизитов.Command.ГрупповоеИзменениеРеквизитов</CommandName>
+							<ExtendedTooltip name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитовРасширеннаяПодсказка" id="1779"/>
+						</Button>
+						<LabelDecoration name="ПояснениеКОбработкеГрупповоеИзменениеОбъектов" id="1761">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изменение реквизитов и табличных частей в выбранных элементах.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеКОбработкеГрупповоеИзменениеОбъектовКонтекстноеМеню" id="1762"/>
+							<ExtendedTooltip name="ПояснениеКОбработкеГрупповоеИзменениеОбъектовРасширеннаяПодсказка" id="1763"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПоискИУдалениеДублей" id="1788">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа поиск и удаление дублей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа поиск и удаление дублей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПоискИУдалениеДублейРасширеннаяПодсказка" id="1789"/>
+					<ChildItems>
+						<Button name="ПоискИУдалениеДублей" id="1790">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ПоискИУдалениеДублей</CommandName>
+							<ExtendedTooltip name="ПоискИУдалениеДублейРасширеннаяПодсказка" id="1791"/>
+						</Button>
+						<LabelDecoration name="ПояснениеКПоискуИУдалениюДублей" id="1792">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поиск похожих элементов по заданным условиям сравнения</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПояснениеКПоискуИУдалениюДублейКонтекстноеМеню" id="1793"/>
+							<ExtendedTooltip name="ПояснениеКПоискуИУдалениюДублейРасширеннаяПодсказка" id="1794"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьДополнительныеОтчетыИОбработки</Field>
+				<Field>НаборКонстант.ИспользоватьПолнотекстовыйПоиск</Field>
+				<Field>НаборКонстант.ИспользоватьРазделениеПоОбластямДанных</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="РежимРаботы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы (фиксированная структура)</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхИдентификатор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхИспользование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных использование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УдалениеПомеченныхРасписание" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удаление помеченных расписание</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление полнотекстовым поиском</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление полнотекстовым поиском и извлечением текстов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбработкаУправлениеПолнотекстовымПоиском</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалениеПомеченныхНастроитьРасписание" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание для автоматического удаления помеченных объектов в регламентном задании.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалениеПомеченныхНастроитьРасписание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоискИУдалениеДублей" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и удаление дублей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поиск и удаление дублей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоискИУдалениеДублей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

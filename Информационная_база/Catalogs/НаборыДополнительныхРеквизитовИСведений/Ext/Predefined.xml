@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.20">
+	<Item id="eeaea31c-d100-438b-8315-bd801571fb84">
+		<Name>Справочник_ВнешниеПользователи</Name>
+		<Code/>
+		<Description>Внешние пользователи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2db27c04-0c5e-4026-ac6e-ebc6654e465d">
+		<Name>Документ_НазначениеОпросов</Name>
+		<Code/>
+		<Description>Назначение опросов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09343521-4f35-4e03-97e0-96ee8bf911c6">
+		<Name>Справочник_Пользователи</Name>
+		<Code/>
+		<Description>Пользователи</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01871ae9-9de8-4fff-83bf-27a5a49978e0">
+		<Name>Справочник_Разделы</Name>
+		<Code/>
+		<Description>Разделы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e60b3f92-7f82-4040-8251-67ce831527cf">
+		<Name>Документ_Тест</Name>
+		<Code/>
+		<Description>Тест</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="778e80c8-4f95-464b-8ee3-94c209fb5eb5">
+		<Name>Справочник_ФизическиеЛица</Name>
+		<Code/>
+		<Description>Физические лица</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="20e88df3-3f70-4ffa-95c2-d3da5eb266b6">
+		<Name>Справочник_ШаблоныТестов</Name>
+		<Code/>
+		<Description>Шаблоны тестов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

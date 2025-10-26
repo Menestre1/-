@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="54f294c2-5240-405d-b178-11ca2bc25a3b">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияСвязиБинарногоДерева" category="Ref">
+				<xr:TypeId>2d3b2d13-6bd8-41a1-bd1a-8a328330a4ee</xr:TypeId>
+				<xr:ValueId>7ed66343-c4e6-4360-bd38-dd7067aeb1ed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияСвязиБинарногоДерева" category="Manager">
+				<xr:TypeId>4ecf1fd6-b6d4-4315-9c59-64f3abe41e2a</xr:TypeId>
+				<xr:ValueId>5b7e52db-71a4-4e17-a44d-ca5a738d0a12</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияСвязиБинарногоДерева" category="List">
+				<xr:TypeId>9cf11f6f-598f-465c-9ed0-89ff9cba2e1b</xr:TypeId>
+				<xr:ValueId>70160621-6cfb-4e6b-836c-916a56868e37</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СостоянияСвязиБинарногоДерева</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояния связи бинарного дерева</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4dd7b259-ee04-410c-8e3e-99ab7d188e32">
+				<Properties>
+					<Name>СвязьАктивна</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связь активна</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e5a2632b-b718-400a-b12f-faec7adef421">
+				<Properties>
+					<Name>ВременноУдаленаИлиВРазработке</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Временно удалена или в разработке</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
