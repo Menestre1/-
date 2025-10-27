@@ -1,6 +1,6 @@
 ## О проекте
 
-Проект разработан в рамках публикации на [InfoStar.ru](https://infostart.ru)
+Проект разработан в рамках публикации на [InfoStart.ru](https://infostart.ru)
 
 [![InfoStar](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)](https://infostart.ru)
 
