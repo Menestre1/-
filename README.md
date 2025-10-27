@@ -1,3 +1,11 @@
+## О проекте
+
+Проект разработан в рамках публикации на [InfoStar.ru](https://infostart.ru)
+
+[![InfoStar](https://infostart.ru/bitrix/templates/sandbox_empty/assets/tpl/abo/img/logo.svg)](https://infostart.ru)
+
+Ссылка на публикацию [https://infostart.ru/1c/reports/2508153/](https://infostart.ru/1c/reports/2508153/)
+
 Данная разработка (модуль «Бинарные тесты - деревья решений, версия 1.0») распространяется под стандартной MIT License. Полный текст лицензии находится в файле LICENSE.
 Ниже приведено краткое изложение основных положений простым языком.
 Вам разрешается:
